@@ -1,0 +1,40 @@
+{
+    "name": "dealnews/datocms-html-to-structured-text",
+    "description": "Convert HTML to DatoCMS Structured Text (DAST) format",
+    "type": "library",
+    "keywords": [
+        "datocms",
+        "structured-text",
+        "html",
+        "dast",
+        "parser",
+        "converter"
+    ],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "DealNews",
+            "homepage": "https://github.com/dealnews"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "ext-dom": "*",
+        "ext-libxml": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "DealNews\\HtmlToStructuredText\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DealNews\\HtmlToStructuredText\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
